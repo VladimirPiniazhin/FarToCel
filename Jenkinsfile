@@ -2,7 +2,6 @@ pipeline {
   agent any
   environment {
     PATH="${env.PATH};C:\\Windows\\System32"
-    GIT_CREDENTIALS=credentials('metropolia')
   }
   stages {
     stage('Checkout') {
