@@ -10,7 +10,7 @@ stages { // Starts the stages block, where you define the different stages of th
       git branch: 'main', credentialsId: 'metropolia', url: 'https://github.com/VladimirPiniazhin/FarToCel.git/' // This step checks out the 'master' branch of the Git
       //repository located at the specified URL using the credentials stored in Jenkins with the ID 'ADirin'.
       } // Closes the steps block for the 'Checkout' stage.
-  } //Closes the stage block for the 'Checkout' stage.
+    } //Closes the stage block for the 'Checkout' stage.
   stage('Build') { //Defines the second stage of the pipeline, named 'Build'.
     steps { //Starts the steps block for the 'Build' stage.
       bat 'mvn clean install' //This step executes a Maven command (mvn clean install) using the Windows batch script.
@@ -28,3 +28,4 @@ stages { // Starts the stages block, where you define the different stages of th
     } //Closes the post block.
   } //Closes the stages block.
 } //Closes the pipeline block.
+}
