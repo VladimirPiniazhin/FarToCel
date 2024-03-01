@@ -21,6 +21,6 @@ class FahrtToCelTest {
     @Test
     void kelvinToFahrenheit() {
         double test = (FahrtToCel.kelvinToFahrenheit(300.1));
-        assertEquals(59.0, test, 0.01);
+        assertEquals(80.51, test, 0.01);
     }
 }
