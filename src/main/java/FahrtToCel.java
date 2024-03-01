@@ -16,4 +16,9 @@ public class FahrtToCel {
         return c;
     }
 
+    public static double kelvinToFahrenheit(double k) {
+        float f = (float) ((9.0 / 5.0) * (k - 273.15) + 32);
+        return f;
+    }
+
 }

@@ -18,4 +18,9 @@ class FahrtToCelTest {
         float test = (FahrtToCel.kelvinToCelsius(273));
         assertEquals(-0.15, test, 0.01  );
     }
+    @Test
+    void kelvinToFahrenheit() {
+        double test = (FahrtToCel.kelvinToFahrenheit(300.1));
+        assertEquals(59.0, test, 0.01);
+    }
 }
